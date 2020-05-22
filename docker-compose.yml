@@ -4,6 +4,10 @@ services:
   generator:
     image: visualroad/core:latest
     working_dir: /app
+    environment:
+      - XDG_RUNTIME_DIR=/tmp
+      - DISPLAY=$DISPLAY
+      - /tmp/.X11-unix:/tmp/.X11-unix
     volumes:
       - .:/app
     entrypoint: python3 /home/ue4/visualroad/generator.py
