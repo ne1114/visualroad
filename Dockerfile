@@ -85,7 +85,7 @@ RUN pip2 install --user --upgrade --ignore-installed -e $CARLA_PATH/PythonAPI/ca
     pip3 install --user --upgrade --ignore-installed -e $CARLA_PATH/PythonAPI/carla
 
 # Install Visual Road
-RUN git clone https://github.com/uwdb/visualroad.git $VISUALROAD_PATH && \
+RUN git clone https://github.com/ne1114/visualroad.git $VISUALROAD_PATH && \
     cd $VISUALROAD_PATH && \
     git checkout $VISUALROAD_VERSION
 
