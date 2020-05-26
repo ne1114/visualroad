@@ -13,7 +13,7 @@ ENV UNREAL_VERSION=4.22
 ENV UNREAL_PATH=/home/ue4/UnrealEngine
 ENV UE4_ROOT $UNREAL_PATH
 
-ARG VISUALROAD_VERSION=master
+ARG VISUALROAD_VERSION=carla_test
 ENV VISUALROAD_PATH=/home/ue4/visualroad
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -58,6 +58,8 @@ RUN apt-get install \
       autoconf \
       libtool \
       git \
+      vim \
+      tmux \
       ffmpeg
 
 # Install clang

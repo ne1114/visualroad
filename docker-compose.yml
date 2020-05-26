@@ -7,9 +7,10 @@ services:
     environment:
       - XDG_RUNTIME_DIR=/tmp
       - DISPLAY=$DISPLAY
-      - /tmp/.X11-unix:/tmp/.X11-unix
     volumes:
       - .:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /usr/lib/nvidia:/usr/lib/nvidia
     entrypoint: python3 /home/ue4/visualroad/generator.py
 
   driver:
