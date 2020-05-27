@@ -1,0 +1,343 @@
+batches:
+- batch:
+  - query:
+      path: traffic-002.mp4
+      t:
+      - 18
+      - 30
+      x:
+      - 874
+      - 915
+      y:
+      - 292
+      - 534
+  - query:
+      path: traffic-003.mp4
+      t:
+      - 19
+      - 25
+      x:
+      - 292
+      - 475
+      y:
+      - 489
+      - 499
+  - query:
+      path: traffic-000.mp4
+      t:
+      - 4
+      - 18
+      x:
+      - 440
+      - 819
+      y:
+      - 176
+      - 199
+  - query:
+      path: traffic-002.mp4
+      t:
+      - 3
+      - 27
+      x:
+      - 134
+      - 833
+      y:
+      - 506
+      - 526
+  query: '1'
+- batch:
+  - query:
+      path: traffic-002.mp4
+  - query:
+      path: traffic-001.mp4
+  - query:
+      path: traffic-003.mp4
+  - query:
+      path: traffic-003.mp4
+  query: 2a
+- batch:
+  - query:
+      d: 14
+      path: traffic-001.mp4
+  - query:
+      d: 3
+      path: traffic-002.mp4
+  - query:
+      d: 15
+      path: traffic-003.mp4
+  - query:
+      d: 12
+      path: traffic-003.mp4
+  query: 2b
+- batch:
+  - query:
+      A: YOLO
+      O: Pedestrian
+      path: traffic-000.mp4
+  - query:
+      A: YOLO
+      O: Pedestrian
+      path: traffic-002.mp4
+  - query:
+      A: YOLO
+      O: Pedestrian
+      path: traffic-001.mp4
+  - query:
+      A: YOLO
+      O: Vehicle
+      path: traffic-003.mp4
+  query: 2c
+- batch:
+  - query:
+      epsilon: 0.8248985345753501
+      m: 20
+      path: traffic-000.mp4
+  - query:
+      epsilon: 0.20152391173305628
+      m: 49
+      path: traffic-001.mp4
+  - query:
+      epsilon: 0.3828998010185962
+      m: 57
+      path: traffic-003.mp4
+  - query:
+      epsilon: 0.5792944501126706
+      m: 25
+      path: traffic-000.mp4
+  query: 2d
+- batch:
+  - query:
+      B: 131072
+      dx: 240
+      dy: 67
+      path: traffic-002.mp4
+  - query:
+      B: 65536
+      dx: 480
+      dy: 135
+      path: traffic-001.mp4
+  - query:
+      B: 131072
+      dx: 480
+      dy: 135
+      path: traffic-003.mp4
+  - query:
+      B: 4194304
+      dx: 120
+      dy: 270
+      path: traffic-000.mp4
+  query: '3'
+- batch:
+  - query:
+      alpha: 8
+      beta: 2
+      path: traffic-002.mp4
+  - query:
+      alpha: 16
+      beta: 4
+      path: traffic-000.mp4
+  - query:
+      alpha: 16
+      beta: 4
+      path: traffic-002.mp4
+  - query:
+      alpha: 4
+      beta: 8
+      path: traffic-002.mp4
+  query: '4'
+- batch:
+  - query:
+      alpha: 32
+      beta: 8
+      path: traffic-002.mp4
+  - query:
+      alpha: 4
+      beta: 2
+      path: traffic-000.mp4
+  - query:
+      alpha: 32
+      beta: 16
+      path: traffic-000.mp4
+  - query:
+      alpha: 4
+      beta: 16
+      path: traffic-003.mp4
+  query: '5'
+- batch:
+  - query:
+      A: YOLO
+      O: Pedestrian
+      path: traffic-003.mp4
+  - query:
+      A: YOLO
+      O: Vehicle
+      path: traffic-003.mp4
+  - query:
+      A: YOLO
+      O: Vehicle
+      path: traffic-000.mp4
+  - query:
+      A: YOLO
+      O: Pedestrian
+      path: traffic-003.mp4
+  query: 6a
+- batch:
+  - query:
+      caption_path: captions
+      path: traffic-003.mp4
+  - query:
+      caption_path: captions
+      path: traffic-001.mp4
+  - query:
+      caption_path: captions
+      path: traffic-003.mp4
+  - query:
+      caption_path: captions
+      path: traffic-001.mp4
+  query: 6b
+- batch:
+  - query:
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+      q2c:
+        A: YOLO
+        O: Vehicle
+      q2d:
+        epsilon: 0.0049416366672419
+        m: 39
+      q6a:
+        A: YOLO
+        O: Vehicle
+  - query:
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+      q2c:
+        A: YOLO
+        O: Pedestrian
+      q2d:
+        epsilon: 0.7090690934666568
+        m: 19
+      q6a:
+        A: YOLO
+        O: Pedestrian
+  - query:
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+      q2c:
+        A: YOLO
+        O: Vehicle
+      q2d:
+        epsilon: 0.26163324431795243
+        m: 25
+      q6a:
+        A: YOLO
+        O: Vehicle
+  - query:
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+      q2c:
+        A: YOLO
+        O: Vehicle
+      q2d:
+        epsilon: 0.9271006075469238
+        m: 12
+      q6a:
+        A: YOLO
+        O: Vehicle
+  query: '7'
+- batch:
+  - query:
+      L: OpenAPLR
+      l: 8CBB288
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+  - query:
+      L: OpenAPLR
+      l: 1FEG007
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+  - query:
+      L: OpenAPLR
+      l: 8OIV478
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+  - query:
+      L: OpenAPLR
+      l: 6mmr757
+      paths:
+      - traffic-000.mp4
+      - traffic-001.mp4
+      - traffic-002.mp4
+      - traffic-003.mp4
+  query: '8'
+- batch:
+  - query:
+      panorama0:
+      - panoramic-000-000.mp4
+  - query:
+      panorama0:
+      - panoramic-000-000.mp4
+  - query:
+      panorama0:
+      - panoramic-000-000.mp4
+  - query:
+      panorama0:
+      - panoramic-000-000.mp4
+  query: '9'
+- batch:
+  - query:
+      bh: 18
+      bl: 16
+      panorama0:
+      - panoramic-000-000.mp4
+      q5:
+        alpha: 2
+        beta: 8
+  - query:
+      bh: 22
+      bl: 20
+      panorama0:
+      - panoramic-000-000.mp4
+      q5:
+        alpha: 32
+        beta: 16
+  - query:
+      bh: 22
+      bl: 20
+      panorama0:
+      - panoramic-000-000.mp4
+      q5:
+        alpha: 16
+        beta: 32
+  - query:
+      bh: 22
+      bl: 21
+      panorama0:
+      - panoramic-000-000.mp4
+      q5:
+        alpha: 4
+        beta: 2
+  query: '10'
+source: /app/test/
+

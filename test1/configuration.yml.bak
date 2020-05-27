@@ -1,0 +1,13 @@
+duration: 30
+hostname: localhost
+name: test_1
+panorama_fov: null
+port: 2000
+resolution:
+  height: 960
+  width: 1280
+scale: 1
+seed: 0
+tiles: []
+timeout: 150
+version: 1.0

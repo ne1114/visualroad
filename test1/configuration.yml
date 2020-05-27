@@ -1,0 +1,38 @@
+duration: 30
+hostname: localhost
+name: test_1
+panorama_fov: null
+port: 2000
+resolution:
+  height: 960
+  width: 1280
+scale: 1
+seed: 0
+tiles:
+- cameras:
+  - type: traffic
+    videos:
+    - /app/test_1/traffic-000.mp4
+  - type: traffic
+    videos:
+    - /app/test_1/traffic-001.mp4
+  - type: traffic
+    videos:
+    - /app/test_1/traffic-002.mp4
+  - type: traffic
+    videos:
+    - /app/test_1/traffic-003.mp4
+  - type: panoramic
+    videos:
+    - /app/test_1/panoramic-000-000.mp4
+    - /app/test_1/panoramic-000-001.mp4
+    - /app/test_1/panoramic-000-002.mp4
+    - /app/test_1/panoramic-000-003.mp4
+  id: 0
+  map: Town03
+  pedestrians: 5
+  vehicles: 3
+  weather: WeatherParameters(cloudyness=80.000000, precipitation=60.000000, precipitation_deposits=100.000000,
+    wind_intensity=1.000000, sun_azimuth_angle=0.000000, sun_altitude_angle=15.000000)
+timeout: 150
+version: 1.0
